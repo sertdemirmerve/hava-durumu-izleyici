@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hava Durumu İzleyici</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-card">
+    <h2>Hava Durumu İzleyici</h2>
+    <input type="text" id="cityInput" placeholder="Şehir adı yazın ve Enter'a basın" autocomplete="off">
+
+    <div id="status">Konum kontrol ediliyor...</div>
+    <div id="weatherData" class="weather-info"></div>
+
+    <div class="saved-section">
+      <h3>Kayıtlı Şehirler</h3>
+      <ul id="savedCities"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

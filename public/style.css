@@ -1,0 +1,147 @@
+body {
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 16px;
+}
+
+.weather-card {
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 360px;
+  border: 1px solid #ffffff55;
+}
+
+.weather-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  color: #34495e;
+}
+
+.weather-card input {
+  width: 100%;
+  padding: 14px;
+  margin: 20px 0;
+  border: 2px solid #74b9ff;
+  border-radius: 10px;
+  background: #f0f8ff;
+  color: #2c3e50;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.weather-card input:focus {
+  border-color: #0984e3;
+}
+
+#status {
+  font-size: 0.95rem;
+  color: #636e72;
+}
+
+.weather-info {
+  margin-top: 16px;
+}
+
+.weather-info .temp {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0984e3;
+}
+
+.weather-info .desc {
+  margin: 8px 0;
+  font-style: italic;
+  color: #636e72;
+  text-transform: capitalize;
+}
+
+.weather-info .minmax {
+  font-size: 0.9rem;
+  color: #636e72;
+  margin-bottom: 14px;
+}
+
+.weather-info button,
+.delete-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+#saveBtn {
+  background: #0984e3;
+  color: white;
+}
+
+#saveBtn:hover {
+  background: #0a6fc0;
+}
+
+.weather-error {
+  color: #d63031;
+  font-weight: 600;
+}
+
+.saved-section {
+  margin-top: 28px;
+  text-align: left;
+  border-top: 1px solid #dfe6e9;
+  padding-top: 18px;
+}
+
+.saved-section h3 {
+  font-size: 1rem;
+  color: #34495e;
+  margin: 0 0 10px;
+}
+
+#savedCities {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+#savedCities li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+#savedCities li.empty {
+  justify-content: center;
+  color: #95a5a6;
+  font-style: italic;
+  background: transparent;
+}
+
+.delete-btn {
+  background: #ffe3e1;
+  color: #d63031;
+}
+
+.delete-btn:hover {
+  background: #ffc9c5;
+}
